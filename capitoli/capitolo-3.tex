@@ -15,20 +15,28 @@ Visto in scala più ampia, il progetto finale risulterà una rivisitazione di Bi
 Tale software, dopo averlo provato con mano, risulta funzionale in ogni sua parte, anche se la sua struttura risulta poco estendibile. Per questo motivo mi è stato proposto di sviluppare una parte di software che si andrà poi ad integrare con il nuovo applicativo che adrà a rimpiazzare l'attuale esistente.
 Nello specifico le richieste a cui ho fatto fronte sono state le seguenti:
 \begin{itemize}
-	\item Libreria di process mining per filtraggio su log degli eventi.
-	\item Interfaccia fronted tenendo come punto di riferimento il vecchio applicativo.
-	\item Stub per verificare il correntto comportamento dell'interfaccia di filtraggio
+	\item Sviluppo di una libreria di process mining per filtraggio su log degli eventi.
+	\item Sviluppo di un'nterfaccia fronted tenendo come punto di riferimento il vecchio applicativo.
+	\item Scrittura di Stub per verificare il correntto comportamento dell'interfaccia di filtraggio
 \end{itemize}
 \section{Pianificazione del progetto}
-Durante il periodo antecedente all'inizio dell'attività di progetto sono state discusse con il tutor tutte le principali che attività che avrei dovuto svolgere nell'arco dei due mesi preposti. Tali attività, anche se in forma generica, sono state inserite nel diagramma di Gantt presente al capitolo precedente (Figura 2.3).
-Per tener traccia di tutte le attività svolte duraurante il periodo di stage, tramite il supporto del tutor e del team in cui sono stato inserito ho cercato di apprendere nella miglior maniera possibile i principi cardine dell'\textit{Agile programming}. Non avendo mai avuto l'occasione prima d'ora di approcciarmi a tale metodologia è stato impegnativo, ma appagante entrare nei suoi meccanismi pratici e nelle sue dinamiche. Tuttavia sono riuscito, almeno in parte, a comprendere alcune importanti metodologie che sono state applicate durante tutto il periodo di stage. Le attività sono state tracciate tramite semplici note, condivise con l'interno team, in cui è descritta un breve cronologia di tutte le attività svolte giorno per giorno, indicando eventuali problematiche riscontrate e come sono state affrontate.
+Durante la stesura del piano di lavoro sono state discusse con il tutor tutte le principali che attività che avrei dovuto svolgere nell'arco dei due mesi preposti. Tali attività, anche se in forma generica, sono state inserite nel diagramma di Gantt presente al capitolo precedente (Figura 2.3).
+Per tener traccia di tutte le attività svolte durante il periodo di stage, tramite il supporto del tutor e del team in cui sono stato inserito, ho cercato di apprendere nella miglior maniera possibile i principi cardine dell'\textit{Agile programming}. Non avendo mai avuto l'occasione prima d'ora di approcciarmi a tale metodologia è stato impegnativo, ma appagante entrare nei suoi meccanismi pratici e nelle sue dinamiche. Tuttavia sono riuscito, almeno in parte, a comprendere alcune importanti metodologie che sono state applicate durante tutto il periodo di stage. Le attività sono state tracciate tramite semplici note, condivise con l'interno team, in cui è descritta un breve cronologia di tutte le attività svolte giorno per giorno, indicando eventuali problematiche riscontrate e come sono state affrontate.
 
 \section{Analisi dei requisiti}
-
+Guardando bipod e Disco e il repository di prom ho tiarato giu i requisiti
 \section{Progettazione}
 \subsection{Libreria}
+ho diviso la libreria in sottosezioni per ogni tiopologia di filtraggio 
 \subsection{Frontend}
+Interfaccia a schede, ogni scheda presenta un filtraggio
+\subsection{Stub}
+per verificare il funzionamento del fronted gestendo websocker chiamate asincrone ecc..
 \section{Codifica}
+ho utilizzata java con intellij per la libreria, typescript e angular per il fronted
 \section{Verifica}
+controllo da parte del tutor
 \section{Validazione}
+approvazione finale da parte del tutor
 \section{Copertura}
+unit test per tutte le funzionali della libreria confrontando con quanto mi usciva da disco.
