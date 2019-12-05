@@ -6,7 +6,6 @@
 \chapter{Il contesto aziendale}
 
 \section{L'azienda}
-
 Siav è una delle più importanti realtà italiane di sviluppo software e di servizi informatici
 specializzata nella dematerializzazione e nella gestione documentale e nei processi
 digitali. Presenta diverse filiali nel suolo italiano che cooperano tra loro per un fine comune. Siav inoltre punta molto sulla collaborazione tra aziende, in campo nazionale sia a livello pubblico che privato, ma anche a livello internazionale. Una fra tutti Microsoft.
@@ -23,19 +22,19 @@ Siav si colloca all'interno del mercato come una tra la più importanti realtà 
 \section {Tecnologie utilizzate}
 Le tecnologie utilizzate dell'azienda per la realizzazione dei propri prodotti sono fondate principalmente sulla possibilità di un utilizzo tramite cloud. Si sono dedicati principalmente sullo sviluppo di \textit{Webapp}. Tali tecnologie possono essere raggruppate in due macrocategorie: \textit{Frontend} e \textit{Backend}.
 \subsection{\textit{Frontend}}
-Da quel che ho potuto constatare durante l'attività di stage, per quanto riguarda lo sviluppo web lato \textit{client} viene utilizzato prevalentamente Angular. Tramite il consistente numero di componenti prefabbricati presenti in rete e una vasta gamma di funzionalità e servizi disponibili, è possibile sviluppare un'interfaccia frontend di qualità a proprio piacimento, soddisfando nel miglior modo possibile le aspettative del cliente.
+Da quel che ho potuto constatare durante l'attività di stage, per quanto riguarda lo sviluppo web lato \textit{client} viene utilizzata prevalentamente la piattaforma Angular. Tramite il consistente numero di componenti prefabbricati presenti in rete e una vasta gamma di funzionalità e servizi disponibili, è possibile sviluppare un'interfaccia frontend di qualità a proprio piacimento, soddisfando nel miglior modo possibile le aspettative del cliente.
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=0.8\columnwidth]{angular} 
 	\caption{Esempio di struttura di un applicativo Angular}
 \end{figure}
 \subsection{\textit{Backend}}
-Per quanto riguarda lato backend vengono utilizzate molteplici tecnologie in base al software di sviluppo in esame: 
-All'interno del loro software di punta Archiflow/Silloge viene utilizzato \textit{Kafka}. Tale sistema consente la gestione di un elevato numero di operazioni in tempo reale per un numero elevato di \textit{client}. Quest'ultimo gestore offre la possibilità di monitorare le attività web memorizzando ed inviando flussi di dati in tempo reale. La tematica dei flussi è molto delicata per il software Archiflow, dovendo gestire una grande mole di documenti ed essendo utilizzato da un cospicuo numero di utenti.
+Per quanto riguarda lato backend vengono utilizzate molteplici tecnologie in base alle necessità che prevede il software di sviluppo;  \textit{RabbitMQ}: questa tecnologia è stata pensata principalmente per un'architettura a microservizi e viene utilizzata in più prodotti all'interno dell'azienda. \textit{RabbitMQ} viene definito come un \textit{Broker} di messaggisticia: ossia un sistema che monitora la trasmissioni di messaggi tra servizi.\\ Un'altro sistema utilizzato, restano in ambito di microservizi è \textit{Kubernetes}: un sistema per la gestione di \textit{container}.
+
 \begin{figure}[!h] 
 	\centering 
-	\includegraphics[width=0.8\columnwidth]{kafka} 
-	\caption{Diagramm illustrativo sul funzionamento di Apache Kafka}
+	\includegraphics[width=0.8\columnwidth]{rabbitmq} 
+	\caption{Diagramm illustrativo sul funzionamento di RabbitMQ}
 \end{figure}
 \section {Processi aziendali}
 \subsection{Metodologie si sviluppo}
@@ -92,6 +91,11 @@ Come strumento di versionamento l'azienda utilizza Git. In particolare viene uti
 I principali aspetti che hanno portato l'azienda all'utilizzo sono:
 \begin{itemize}
 	\item \textit{branch/merge:} Permette con facilità la creazione di \textit{branch}, in modo che ogni sviluppatore possa lavorare nel proprio ramo senza intaccare quello principale (stabile) del rapository, evitando quindi la generazioni di conflitti o errori. Nel momento in cui il software sviluppato all'interno branch viene definito stabile è possibile riallinearlo con il ramo principale tramite un'operazione di \textit{merge}.
+	\begin{figure}[!h] 
+		\centering 
+		\includegraphics[width=0.8\columnwidth]{branch} 
+		\caption{Esempio di creazione di un branch seguito da un'oprazione di merge}
+	\end{figure}
 	\item Reperibilità: Anche in assenza di connessione è possibile effettuare commit in locale, in modo da non perdere i progressi fatti finora e salvare il lavoro fatto.
 	\item Ridondanza: Ogni Sviluppatore contiene una copia del repository: Il rischio di perdita dei dati è dunque diviso tra i \textit{contributors} che possiedono l'ultima versione del software in locale.
 \end{itemize} 
