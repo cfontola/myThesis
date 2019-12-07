@@ -1,18 +1,5 @@
 
 %**************************************************************
-% Acronimi
-%**************************************************************
-\renewcommand{\acronymname}{Acronimi e abbreviazioni}
-
-\newacronym[description={\glslink{apig}{Application Program Interface}}]
-    {api}{API}{Application Program Interface}
-
-\newacronym[description={\glslink{umlg}{Unified Modeling Language}}]
-    {uml}{UML}{Unified Modeling Language}
-
-
-
-%**************************************************************
 % Glossario
 %**************************************************************
 %\renewcommand{\glossaryname}{Glossario}
@@ -25,13 +12,7 @@
     description={in informatica con il termine \emph{Application Programming Interface API} (ing. interfaccia di programmazione di un'applicazione) si indica ogni insieme di procedure disponibili al programmatore, di solito raggruppate a formare un set di strumenti specifici per l'espletamento di un determinato compito all'interno di un certo programma. La finalità è ottenere un'astrazione, di solito tra l'hardware e il programmatore o tra software a basso e quello ad alto livello semplificando così il lavoro di programmazione}
 }
 
-\newglossaryentry{umlg}
-{
-    name=\glslink{uml}{UML},
-    text=UML,
-    sort=uml,
-    description={in ingegneria del software \emph{UML, Unified Modeling Language} (ing. linguaggio di modellazione unificato) è un linguaggio di modellazione e specifica basato sul paradigma object-oriented. L'\emph{UML} svolge un'importantissima funzione di ``lingua franca'' nella comunità della progettazione e programmazione a oggetti. Gran parte della letteratura di settore usa tale linguaggio per descrivere soluzioni analitiche e progettuali in modo sintetico e comprensibile a un vasto pubblico}
-}
+
 
 \newglossaryentry{helpdesk}
 {
@@ -61,7 +42,7 @@
     name=\glslink{deploy}{Deploy},
     text=deploy,
     sort=deploy,
-    description={ consegna o rilascio al cliente, con relativa installazione e messa in funzione o esercizio, di una applicazione o di un sistema software tipicamente all'interno di un sistema informatico aziendale }
+    description={ consegna o rilascio al cliente, con relativa installazione e messa in funzione o esercizio, di una applicazione o di un sistema software tipicamente all'interno di un sistema informatico aziendale}
 }
 
 \newglossaryentry{Angular}
@@ -69,7 +50,7 @@
     name=\glslink{Angular}{Angular},
     text=Angular,
     sort=Angular,
-    description={ Angular 2+ è una piattaforma open source per lo sviluppo di applicazioni web con licenza MIT, evoluzione di AngularJS. Sviluppato principalmente da Google, la sua prima release è avvenuta il 14 settembre 2016.}
+    description={ Angular 2+ è una piattaforma open source per lo sviluppo di applicazioni web con licenza MIT, evoluzione di AngularJS. Sviluppato principalmente da Google, la sua prima release è avvenuta il 14 settembre 2016}
 }
 
 \newglossaryentry{Websocket}
@@ -77,7 +58,7 @@
     name=\glslink{Websocket}{Websocket},
     text=Websocket,
     sort=Websocket,
-    description={tecnologia web che fornisce canali di comunicazione full-duplex attraverso una singola connessione TCP.}
+    description={tecnologia web che fornisce canali di comunicazione full-duplex attraverso una singola connessione TCP}
 }
 \newglossaryentry{Cloud}
 {
@@ -92,7 +73,7 @@
     name=\glslink{BigData}{BigData},
     text=BigData,
     sort=BigData,
-    description={raccolta estesa di dati in termini di volume, velocità e varietà da richiedere tecnologie e metodi analitici specifici per l'estrazione di valore o conoscenza.}
+    description={raccolta estesa di dati in termini di volume, velocità e varietà da richiedere tecnologie e metodi analitici specifici per l'estrazione di valore o conoscenza}
 }
 
 \newglossaryentry{Framework}
@@ -108,7 +89,7 @@
     name=\glslink{Broker}{Broker},
     text=Broker,
     sort=Broker,
-    description={Sistema che distribuisce vari aspetti del software su nodi differenti tramite l'utilizzo di oggetti remoti.}
+    description={Sistema che distribuisce vari aspetti del software su nodi differenti tramite l'utilizzo di oggetti remoti}
 }
 
 \newglossaryentry{Stage-IT}
@@ -116,33 +97,56 @@
     name=\glslink{Stage-IT}{Stage-IT},
     text=Stage-IT,
     sort=Stage-IT,
-    description={Evento organizzate presso Padova Fiere in collaborazione con varie aziende locali che cercano di far approcciare gli studenti al mondo lavorativo tramite attività di stage.}
+    description={Evento organizzate presso Padova Fiere in collaborazione con varie aziende locali che cercano di far approcciare gli studenti al mondo lavorativo tramite attività di stage}
 }
 \newglossaryentry{Javadoc}
 {
     name=\glslink{Javadoc}{Javadoc},
     text=Javadoc,
     sort=Javadoc,
-    description={Javadoc è un applicativo incluso all'interno del Java Development Kit della Sun Microsystems, utilizzato per la generazione automatica della documentazione del codice sorgente scritto in linguaggio Java.}
+    description={Javadoc è un applicativo incluso all'interno del Java Development Kit della Sun Microsystems, utilizzato per la generazione automatica della documentazione del codice sorgente scritto in linguaggio Java}
 }
 \newglossaryentry{stub}
 {
     name=\glslink{stub}{Stub},
     text=stub,
     sort=stub,
-    description={è una porzione di codice utilizzata in sostituzione di altre funzionalità software in quanto può simulare il comportamento di codice esistente o l'interfaccia COM, e temporaneo sostituto di codice ancora da sviluppare.}
+    description={è una porzione di codice utilizzata in sostituzione di altre funzionalità software in quanto può simulare il comportamento di codice esistente o l'interfaccia COM, e temporaneo sostituto di codice ancora da sviluppare}
 }
 \newglossaryentry{callback}
 {
     name=\glslink{callback}{Callback},
     text=callback,
     sort=callback,
-    description={chiama dietro}
+    description={funzione o blocco di codice che viene passato come parametro ad un'altra funzione}
 }
 \newglossaryentry{Disco}
 {
     name=\glslink{Disco}{Disco},
     text=Disco,
     sort=Disco,
-    description={csoftware process mining}
+    description={Tool di process mining sviluppato da Fluxicon}
+}
+
+\newglossaryentry{JSON}
+{
+    name=\glslink{JSON}{JSON},
+    text=JSON,
+    sort=JSON,
+    description={JavaScript Object Notation. Formato adatto all'interscambio di applicazione client/server}
+}
+
+\newglossaryentry{unit test}
+{
+    name=\glslink{unit test}{Unit test},
+    text=unit test,
+    sort=unit test,
+    description={Test di unità}
+}
+\newglossaryentry{mockup}
+{
+    name=\glslink{mockup}{Mockup},
+    text=mockup,
+    sort=mockup,
+    description={realizzazione a scopo illustrativo di un oggetto o sistema senza le complete funzioni originali}
 }

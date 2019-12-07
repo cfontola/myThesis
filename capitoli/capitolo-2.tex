@@ -6,19 +6,17 @@
 \chapter{L'attività di stage all'interno della strategia aziendale}
 \label{cap:processi-metodologie}
 %**************************************************************
-\intro{Introduzione al capitolo}\\
-  In questo capitolo si andrà ad illustrare la propensione dell'azienda rispetto allo stage, indicando le attività con le relative tematiche che mi sono state proposte e come tali siano inserite all'interno della strategia aziendale\\
 
 %**************************************************************
 \section{Vantaggi aziendali}
-\textit{Siav} da molti anni ha stretto un accordo con l'Università di Padova per quanto riguarda la propensione a svolgere attività di stage. È in continua ricerca di nuove figure da poter inserire all'interno del loro organigramma, soprattutto per quanto riguarda studenti o neo laureati.  Essendo un'azienda in forte crescita ed espansione, necessita costantemente di nuovo personale, ma soprattutto, di nuove idee e tecnologie da poter poi attuare all'interno dei propri prodotti. La maggior parte degli stage vengono avviati dal settore di Ricerca e Sviluppo proprio per soddisfare questa necessità; solitamente le attività di stage proposte comprendono un periodo di formazione iniziale per poter prendere dimestichezza con le nuove tecnologie che si andranno ad attuare, per poi metterle in pratica con il supporto costante del team. Questa sezione presente all'interno di \textit{Siav} garantisce una costante dedizione alla ricerca, non soffermandosi a ciò che è già presente all'interno dell'azienda, ma cercando di spaziare tra più tematiche in contemporanea, procedendo all'attivazione di più stage in ambiti diversi, spaziando quindi la ricerca su più fronti. L'azienda, inoltre, avendo stipulato un cospicuo numero di \textit{partnership} si ritrova spesso e volentieri far partecipare i propri dipendenti a diversi \textit{meeting} o seminari per quanto riguarda lo studio e approfondimento di nuove tecnologie emergenti o di tendenza. Tali aspetti vengono poi valutati dal team tramite un studio di fattibilità per poter verificare se le tematiche affrontate possono portare qualcosa di redditizio all'interno del contesto aziendale. Quest'ultime portano \textit{Siav} ad essere una delle realtà italiane più attive e propense alla ricerca e allo sviluppo.
+\textit{Siav} da molti anni è propensa a svolgere attività di stage in collaborazione con l'Università di Padova. È in continua ricerca di nuove figure da poter inserire all'interno del loro organigramma, soprattutto per quanto riguarda studenti o neo laureati.  Essendo un'azienda in forte crescita ed espansione, necessita costantemente di nuovo personale, ma soprattutto, di nuove idee e tecnologie da poter poi attuare all'interno dei propri prodotti. La maggior parte degli stage vengono avviati dal settore di Ricerca e Sviluppo proprio per soddisfare questa necessità; solitamente le attività di stage proposte comprendono un periodo di formazione iniziale per poter prendere dimestichezza con le nuove tecnologie che si andranno ad attuare, per poi metterle in pratica con il supporto costante del team. Questa sezione presente all'interno di \textit{Siav} garantisce una costante dedizione alla ricerca, non soffermandosi a ciò che è già presente all'interno dell'azienda, ma cercando di spaziare tra più tematiche in contemporanea, procedendo all'attivazione di più stage in ambiti diversi, spaziando quindi la ricerca su più fronti. L'azienda, inoltre, avendo stipulato un cospicuo numero di \textit{partnership} si ritrova spesso e volentieri far partecipare i propri dipendenti a diversi \textit{meeting} o seminari per quanto riguarda lo studio e approfondimento di nuove tecnologie emergenti o di tendenza. Tali aspetti vengono poi valutati dal team tramite un studio di fattibilità per poter verificare se le tematiche affrontate possono portare qualcosa di redditizio all'interno del contesto aziendale. Quest'ultime portano \textit{Siav} ad essere una delle realtà italiane più attive e propense alla ricerca e allo sviluppo.
 
 \section{Introduzione al progetto}
 \textit{Siav} attraverso i numerosi progetti di stage mira ad esplorare nuove tematiche e nuove opportunità tecnologiche che possano portare ad un miglioramento dei propri prodotti. Il progetto che mi è stato proposto mirava proprio al miglioramento di un loro applicativo. Lo scopo dello stage, è stato diviso in tre parti:
 \begin{itemize}
 	\item sviluppo di una libreria di \textit{process mining} per la pulizia di log degli eventi
-	\item sviluppo di un'interfaccia \textit{frontend} che rispettasse le tematiche presenti all'interno della libreria
-	\item sviluppo di \gls{stub} che simulino il comportamento del \textit{backend} per verificare il corretto funzionamento dell'interfaccia.
+	\item sviluppo di un'interfaccia \textit{front-end} che rispettasse le tematiche presenti all'interno della libreria
+	\item sviluppo di \gls{stub} che simulino il comportamento del \textit{back-end} per verificare il corretto funzionamento dell'interfaccia.
 \end{itemize}
 Tramite questo stage è stato possibile per \textit{Siav} migliorare uno dei propri prodotti che aveva perso la sua mantenibilià, essendo stato sviluppato da un piccolo team che ora non era più presente in azienda. Oltretutto la documentazione è risultata scarsa e di difficile comprensione; è stato quindi deciso di riscrivere l'applicativo da zero, cercando di mantenere le principali funzionalità, analizzando qualche aspetto critico che presenteva la vecchia architettura e cercando un'alternativa solida basandosi su nuove tecniche e tecnologie che all'epoca non erano state prese in considerazione. 
 \subsection{Analisi del software attuale}
@@ -28,9 +26,9 @@ Durante la prima parte dello stage l'obiettivo è quello di analizzare le funzio
 In seguito all'attività di analisi del vecchio applicativo, un obiettivo dello stage risiede nella progettazione di un libreria di filtraggio in grado di poter effettuare la principali operazioni di pulizia su log degli eventi. Tale libreria dovrà soddisfare alcuni requisiti fonadmentali:
 \begin{itemize}
 	\item dovrà essere mantenibile nel tempo, facendo uso quindi di oppurtuni principi cardine della Programmazione ad Oggetti e dovrà essere documentata in modo preciso, facendo sì che chiunque la analizzi in futuro per poter effettuare alcune modifiche possa apprendere in modo chiaro e trasparente ogni sua parte e la sua struttua.
-	\item dovrà essere affidabile e testata in ogni sua parte tramite \textit{Unit Test} in modo da garantire una base solida di partenza per poi contestualizzarla all'interno di un'architettura a microservizi
+	\item dovrà essere affidabile e testata in ogni sua parte tramite \textit{Unit Test} in modo da garantire una base solida di partenza per poi contestualizzarla all'interno di un'architettura a microservizi.
 \end{itemize}
-\subsection{Progettazione interfaccia \textit{frontend}}
+\subsection{Progettazione interfaccia \textit{front-end}}
 Successivamente all'implementazione della libreria sarà necessario progettare l'interfaccia \textit{fronted}; per quest'ultima sarà necessario avvalersi del loro vecchio applicativo \textit{Bipod}, per poi confrontarlo con la libreria sviluppata discutendo con il tutor eventuali modifiche in caso di discrepanze. Tale interfaccia sarà rivista in modo più preciso ed approfondito una volta terminata la libreria, avendo quindi una visuale più ampie delle funzionalità offerte. Inoltre dovrà essere sviluppata con un framework ed un linguaggio più attuale rispetto al vecchio software, inoltre è stata richiesta un'interfaccia più intuitiva e semplificata rispetto a quella presente sull'applicativo odierno.
 \begin{figure}[!h] 
 	\centering 
@@ -39,7 +37,7 @@ Successivamente all'implementazione della libreria sarà necessario progettare l
 \end{figure}
 \newpage
 \section{Aspettative aziendali}
-Al termine delle 340 ore l'azienda si aspetta di avere un libreria di filtraggio solida ed estendibile, in grado di eseguire le principali funzionalità di filtraggio al'interno di un log degli eventi, un'interfaccia \textit{frontend} semplice ed intuitiva in grado di utilizzare tutte le funzionalità incluse all'interno della libreria e uno \textit{Stub} per osservare il comportamento di un'interfaccia, in relazione dell'architettura finale.
+Al termine delle 340 ore l'azienda si aspetta di avere un libreria di filtraggio solida ed estendibile, in grado di eseguire le principali funzionalità di filtraggio al'interno di un log degli eventi, un'interfaccia \textit{front-end} semplice ed intuitiva in grado di utilizzare tutte le funzionalità incluse all'interno della libreria e uno \textit{Stub} per osservare il comportamento di un'interfaccia, in relazione dell'architettura finale.
 Il tutto deve essere pensato per un’erogazione in modalità \textit{cloud}, pertanto le scelte architetturali dovranno tener conto di questo prerequisito.
 \begin{figure}[!h] 
 	\centering 
@@ -63,7 +61,7 @@ Tali attività mi hanno portato a definire i principali requisiti con il tutor a
      documenti; &  \\
 	\hline
 	\hline
-	Implementazione del frontend web e dei servizi di backend necessari a gestire le\\
+	Implementazione del front-end web e dei servizi di back-end necessari a gestire le\\
 	funzionalità di filtraggio degli eventi &  \\
 	\hline
 	\hline
@@ -81,7 +79,7 @@ Tali attività mi hanno portato a definire i principali requisiti con il tutor a
 		point-and-click sul processo per inserimento di filtri sulle successioni di eventi&  \\
 		\hline
 		\hline
-		implementazione test frontend &  \\
+		implementazione test front-end &  \\
 		\hline
 	\end{tabularx}
 \end{table}
@@ -98,7 +96,7 @@ Nel periodo antecedente all'inizio dello stage l'azienda ha redatto una scansion
     \item \textbf{Settimana 8}: Test e sperimentazione del software
 \end{itemize}
 Durante tutto il periodo sopraindicato è stata richiesta anche una documentazione sul lavoro, includendo una breve cronologia delle attività svolte, indicando le eventuali criticità riscontrate e specificando in che modo sono state affrontate e risolte.\\
-Tale pianificazione è stata rinegoziata a partire dalla sesta settimana; in quanto l'architettura finale non era stata ancora ideata in modo specifico. Questo ha portato, in accordo con il tutor ad una rinegoziazione dei requisiti e quindi della attività programmate; sostituendo l'attività di \textit{deploy} su \textit{docker} con l'implmentazione di alcuni stub in modo da poter verificare il comportamento dell'interfaccia frontend.
+Tale pianificazione è stata rinegoziata a partire dalla sesta settimana; in quanto l'architettura finale non era stata ancora ideata in modo specifico. Questo ha portato, in accordo con il tutor ad una rinegoziazione dei requisiti e quindi della attività programmate; sostituendo l'attività di \textit{deploy} su \textit{docker} con l'implmentazione di alcuni stub in modo da poter verificare il comportamento dell'interfaccia front-end.
 \begin{figure}[!h] 
 	\centering 
 	\includegraphics[width=1.0\columnwidth]{gantt} 
@@ -114,7 +112,7 @@ Tali note sono poi oggetto di discussione tramite \textit{Daily meeting}: in cui
 	\caption{Illustrazione semplificata di \textit{Daily Meeting} (\url{https://tinyurl.com/ub822u3})}
 \end{figure}
 \subsubsection{Vincoli tecnologici}
-Come sopra descritto l'obiettivo fondamentamentale per l'azienda è che l'applicativo finale fosse in grado di girare su server \textit{Cloud}. Questo ha influito in modo significativo sui vincoli tecnologici che sono stati imposti. Innanzitutto tramite lo sviluppo di una libreria che fosse scritta in modo semplice e leggibile, per far sì che chi dovrà inserirla nell'ambiente a microservizi abbia un'idea precisa delle sue caratterische ed il suo funzionamento; in secondo luogo tramite la gestione dell'asincronia all'interno dell'interfaccia \textit{frontend}, andando a gestire i messaggi in arrivo dal server, categorizzandoli e adattando il comportamente dell'interfaccia a seconda della caratterizzazione del messaggio in arrivo.
+Come sopra descritto l'obiettivo fondamentamentale per l'azienda è che l'applicativo finale fosse in grado di girare su server \textit{Cloud}. Questo ha influito in modo significativo sui vincoli tecnologici che sono stati imposti. Innanzitutto tramite lo sviluppo di una libreria che fosse scritta in modo semplice e leggibile, per far sì che chi dovrà inserirla nell'ambiente a microservizi abbia un'idea precisa delle sue caratterische ed il suo funzionamento; in secondo luogo tramite la gestione dell'asincronia all'interno dell'interfaccia \textit{front-end}, andando a gestire i messaggi in arrivo dal server, categorizzandoli e adattando il comportamente dell'interfaccia a seconda della caratterizzazione del messaggio in arrivo.
 \section{Aspettative personali}
 Tutte le mie passate esperienze sono riconducibili esclusivamento all'ambito accademico; l'esperienza che più mi ha avvicinato all'ambito lavorativo è stato il progetto di Ingegneria del Software; tramite il quale ho potuto constatare alcune dinamiche presenti all'interno di un contesto professionale. Per poter approcciarmi al mondo lavorativo ho partecipato all'evento organizzato dall'Università di Padova \textit{\gls{Stage-IT}}; tramite il quale ho potuto affrontare diversi incontri con realtà aziendali ben formate e strutturate. Durante la fiera ho potuto valutare diverse attività di stage tenendo in considerazione le tematiche trattate e quanto ciò potessero incidere nel mio grado di formazione. La maggior parte di esse però, non sono risultate, a mio parere, stimolanti per la mia maturità a livello professionale. 
 Le aspettative che mi sono preposto prima dell'evento di \textit{Stage-IT} sono state le seguenti:
